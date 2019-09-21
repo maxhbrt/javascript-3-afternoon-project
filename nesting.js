@@ -52,6 +52,21 @@ var employees = [
 
 //Code Here
 
+function employeeUpdater(){
+  for (let i =0; i < employees.length;i ++){
+    if (employees.firstName === "Lorie"){
+      employees.department = 'HR'
+    }
+    else if (employees.firstName === "Theo"){
+      delete employees.firstName
+      delete employees.lastName
+      delete employees.email
+      delete employees.department
+    }
+  }
+  return employees
+}
+
 
 
 ////////// PROBLEM 2 //////////
@@ -97,8 +112,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = cat.catFriends[0].activities[1];
+var fluffy2ndFriend = cat.catFriends[1].name;
 
 
 
@@ -158,5 +173,4 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 //Code Here
-
 
