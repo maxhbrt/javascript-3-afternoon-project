@@ -22,10 +22,10 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 
 //Code Here
 let evenNumbers = mixedNumbers.filter(function(x){
-  if (x % 2 ===0 || x === 0){
-    return x;
-  }
-})
+   return x % 2 ===0 ;
+    
+  })
+
 
 
 
@@ -70,8 +70,7 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 
 //Code Here
 let totalPopulation = populations.reduce((x, y) => x + y
-
-)
+);
   
   
 
